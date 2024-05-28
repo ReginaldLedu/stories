@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./panel.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Panel</title>
+	</head>
+	<body>
+		<section class="panel__askR">
+			<div class="panel__wrapper__askR">
+				<div class="panel__top__askR">
+					<div class="panel__title-box__askR">
+						<button class="panel__back__askR">
+							<svg
+								width="21"
+								height="8"
+								viewBox="0 0 21 8"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M0.146446 3.64644C-0.0488148 3.84171 -0.0488148 4.15829 0.146446 4.35355L3.32843 7.53553C3.52369 7.73079 3.84027 7.73079 4.03553 7.53553C4.2308 7.34027 4.2308 7.02369 4.03553 6.82843L1.20711 4L4.03553 1.17157C4.2308 0.976309 4.2308 0.659727 4.03553 0.464465C3.84027 0.269202 3.52369 0.269202 3.32843 0.464465L0.146446 3.64644ZM20.5 3.5L0.5 3.5L0.5 4.5L20.5 4.5L20.5 3.5Z"
+									fill="#6F6F6F"
+								/>
+							</svg>
+							<p class="back__text__askR">назад</p>
+						</button>
+
+						<input
+							disabled
+							placeholder="ПАПКА"
+							type="text"
+							class="panel__title__askR"
+						/>
+						<svg
+							class="title__edit__askR"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g opacity="0.5__askR">
+								<path
+									d="M15 6L18 9M13 20H21M5 16L4 20L8 19L19.586 7.414C19.9609 7.03895 20.1716 6.53033 20.1716 6C20.1716 5.46967 19.9609 4.96106 19.586 4.586L19.414 4.414C19.0389 4.03906 18.5303 3.82843 18 3.82843C17.4697 3.82843 16.9611 4.03906 16.586 4.414L5 16Z"
+									stroke="#121212"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</g>
+						</svg>
+						<button class="title__save__askR">СОХРАНИТЬ</button>
+					</div>
+					<div class="panel__filter-box__askR">
+						<input type="text" class="panel__search__askR" />
+						<div class="panel__sort__askR">
+							<h3 class="sort__title__askR">Сортировка:</h3>
+							<button class="sort__button__askR">ВСЕ</button>
+							<button class="sort__button__askR">ПАПКИ</button>
+							<button class="sort__button__askR">АКТИВЕН</button>
+							<button class="sort__button__askR">Тест</button>
+						</div>
+					</div>
+				</div>
+				<div class="panel__actions__askR">
+					<button class="action__choose__askR">
+						<label for="choose__all" class="choose__all_label__askR">
+							<input
+								id="choose__all"
+								type="checkbox"
+								class="choose__all__askR"
+							/>
+
+							<div class="card__checked__choose__askR">
+								<svg
+									class="svg"
+									width="15"
+									height="12"
+									viewBox="0 0 15 12"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M5.12488 8.80125L1.82363 5.5L0.699463 6.61625L5.12488 11.0417L14.6249 1.54166L13.5086 0.425415L5.12488 8.80125Z"
+										fill="white"
+									/>
+								</svg>
+							</div>
+							<p class="text__askR">Выделить все</p>
+						</label>
+					</button>
+					<button class="action__start__askR">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								class="start_svg__askR"
+								d="M8.99991 16.17L4.82991 12L3.40991 13.41L8.99991 19L20.9999 7L19.5899 5.59L8.99991 16.17Z"
+								fill="#6f6f6f"
+							/>
+						</svg>
+
+						<p class="action__text__askR">Активировать</p>
+					</button>
+					<button class="action__download__askR">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								class="download_svg__askR"
+								d="M5 11H9C10.1 11 11 10.1 11 9V5C11 3.9 10.1 3 9 3H5C3.9 3 3 3.9 3 5V9C3 10.1 3.9 11 5 11ZM5 5H9V9H5V5ZM5 21H9C10.1 21 11 20.1 11 19V15C11 13.9 10.1 13 9 13H5C3.9 13 3 13.9 3 15V19C3 20.1 3.9 21 5 21ZM5 15H9V19H5V15ZM13 5V9C13 10.1 13.9 11 15 11H19C20.1 11 21 10.1 21 9V5C21 3.9 20.1 3 19 3H15C13.9 3 13 3.9 13 5ZM19 9H15V5H19V9ZM21 20.5V19.5C21 19.22 20.78 19 20.5 19H19.5C19.22 19 19 19.22 19 19.5V20.5C19 20.78 19.22 21 19.5 21H20.5C20.78 21 21 20.78 21 20.5ZM13 13.5V14.5C13 14.78 13.22 15 13.5 15H14.5C14.78 15 15 14.78 15 14.5V13.5C15 13.22 14.78 13 14.5 13H13.5C13.22 13 13 13.22 13 13.5ZM16.5 15H15.5C15.22 15 15 15.22 15 15.5V16.5C15 16.78 15.22 17 15.5 17H16.5C16.78 17 17 16.78 17 16.5V15.5C17 15.22 16.78 15 16.5 15ZM13 17.5V18.5C13 18.78 13.22 19 13.5 19H14.5C14.78 19 15 18.78 15 18.5V17.5C15 17.22 14.78 17 14.5 17H13.5C13.22 17 13 17.22 13 17.5ZM15.5 21H16.5C16.78 21 17 20.78 17 20.5V19.5C17 19.22 16.78 19 16.5 19H15.5C15.22 19 15 19.22 15 19.5V20.5C15 20.78 15.22 21 15.5 21ZM17.5 19H18.5C18.78 19 19 18.78 19 18.5V17.5C19 17.22 18.78 17 18.5 17H17.5C17.22 17 17 17.22 17 17.5V18.5C17 18.78 17.22 19 17.5 19ZM18.5 13H17.5C17.22 13 17 13.22 17 13.5V14.5C17 14.78 17.22 15 17.5 15H18.5C18.78 15 19 14.78 19 14.5V13.5C19 13.22 18.78 13 18.5 13ZM19.5 17H20.5C20.78 17 21 16.78 21 16.5V15.5C21 15.22 20.78 15 20.5 15H19.5C19.22 15 19 15.22 19 15.5V16.5C19 16.78 19.22 17 19.5 17Z"
+								fill="#6f6f6f"
+							/>
+						</svg>
+						<p class="action__text__askR">Скачать QR</p>
+					</button>
+					<button class="action__print__askR">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								class="print_svg__askR"
+								d="M7 10C6.80222 10 6.60888 10.0586 6.44443 10.1685C6.27998 10.2784 6.15181 10.4346 6.07612 10.6173C6.00043 10.8 5.98063 11.0011 6.01921 11.1951C6.0578 11.3891 6.15304 11.5673 6.29289 11.7071C6.43275 11.847 6.61093 11.9422 6.80491 11.9808C6.99889 12.0194 7.19996 11.9996 7.38268 11.9239C7.56541 11.8482 7.72159 11.72 7.83147 11.5556C7.94135 11.3911 8 11.1978 8 11C8 10.7348 7.89464 10.4804 7.70711 10.2929C7.51957 10.1054 7.26522 10 7 10ZM19 6H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2H7C6.73478 2 6.48043 2.10536 6.29289 2.29289C6.10536 2.48043 6 2.73478 6 3V6H5C4.20435 6 3.44129 6.31607 2.87868 6.87868C2.31607 7.44129 2 8.20435 2 9V15C2 15.7956 2.31607 16.5587 2.87868 17.1213C3.44129 17.6839 4.20435 18 5 18H6V21C6 21.2652 6.10536 21.5196 6.29289 21.7071C6.48043 21.8946 6.73478 22 7 22H17C17.2652 22 17.5196 21.8946 17.7071 21.7071C17.8946 21.5196 18 21.2652 18 21V18H19C19.7956 18 20.5587 17.6839 21.1213 17.1213C21.6839 16.5587 22 15.7956 22 15V9C22 8.20435 21.6839 7.44129 21.1213 6.87868C20.5587 6.31607 19.7956 6 19 6ZM8 4H16V6H8V4ZM16 20H8V16H16V20ZM20 15C20 15.2652 19.8946 15.5196 19.7071 15.7071C19.5196 15.8946 19.2652 16 19 16H18V15C18 14.7348 17.8946 14.4804 17.7071 14.2929C17.5196 14.1054 17.2652 14 17 14H7C6.73478 14 6.48043 14.1054 6.29289 14.2929C6.10536 14.4804 6 14.7348 6 15V16H5C4.73478 16 4.48043 15.8946 4.29289 15.7071C4.10536 15.5196 4 15.2652 4 15V9C4 8.73478 4.10536 8.48043 4.29289 8.29289C4.48043 8.10536 4.73478 8 5 8H19C19.2652 8 19.5196 8.10536 19.7071 8.29289C19.8946 8.48043 20 8.73478 20 9V15Z"
+								fill="#6f6f6f"
+							/>
+						</svg>
+						<p class="action__text__askR">Скачать для печати</p>
+					</button>
+					<button class="action__delete__askR">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g clip-path="url(#clip0_78_1417)">
+								<path
+									class="delete_svg__askR"
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M14.28 2C14.6998 2.00011 15.1088 2.13229 15.4493 2.37781C15.7898 2.62333 16.0444 2.96975 16.177 3.368L16.72 5H20C20.2652 5 20.5196 5.10536 20.7071 5.29289C20.8946 5.48043 21 5.73478 21 6C21 6.26522 20.8946 6.51957 20.7071 6.70711C20.5196 6.89464 20.2652 7 20 7H19V19C19 19.7956 18.6839 20.5587 18.1213 21.1213C17.5587 21.6839 16.7956 22 16 22H8C7.20435 22 6.44129 21.6839 5.87868 21.1213C5.31607 20.5587 5 19.7956 5 19V7H4C3.73478 7 3.48043 6.89464 3.29289 6.70711C3.10536 6.51957 3 6.26522 3 6C3 5.73478 3.10536 5.48043 3.29289 5.29289C3.48043 5.10536 3.73478 5 4 5H7.28L7.823 3.368C7.9557 2.96959 8.21043 2.62305 8.5511 2.37752C8.89176 2.13198 9.30107 1.9999 9.721 2H14.28ZM17 7H7V19C7 19.2652 7.10536 19.5196 7.29289 19.7071C7.48043 19.8946 7.73478 20 8 20H16C16.2652 20 16.5196 19.8946 16.7071 19.7071C16.8946 19.5196 17 19.2652 17 19V7ZM14.28 4H9.72L9.387 5H14.613L14.28 4Z"
+									fill="#6f6f6f"
+								/>
+							</g>
+							<defs>
+								<clipPath id="clip0_78_1417">
+									<rect width="24" height="24" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+						<p class="action__text__askR">Удалить</p>
+					</button>
+				</div>
+				<div class="panel__cards__askR">
+					<div id="card" class="card__askR">
+						<div class="card__top__askR">
+							<div class="card__top_wrapper__askR">
+								<div class="card__num-box__askR">
+									<p class="card__number__askR">№ 782942</p>
+									<label for="card__checked" class="card__label__askR">
+										<input
+											id="card__checked"
+											type="checkbox"
+											class="card__input__askR"
+											name="card__input"
+										/>
+										<div class="card__checked__askR">
+											<svg
+												class="svg"
+												width="15"
+												height="12"
+												viewBox="0 0 15 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M5.12488 8.80125L1.82363 5.5L0.699463 6.61625L5.12488 11.0417L14.6249 1.54166L13.5086 0.425415L5.12488 8.80125Z"
+													fill="white"
+												/>
+											</svg>
+										</div>
+									</label>
+								</div>
+								<p class="card__title__askR">МОЕ ПЕРВОЕ ФОТО</p>
+								<p class="card__date__askR">24.04.2022</p>
+								<p class="card__count__askR">24</p>
+								<p class="card__count_text__askR">фото</p>
+							</div>
+						</div>
+						<div class="card__bottom__askR">
+							<div class="card__wrapper__askR">
+								<div class="card__paid__askR">ОПЛАЧЕНО</div>
+								<button class="block__more__askR">...</button>
+							</div>
+						</div>
+					</div>
+					<div id="card" class="card__askR">
+						<div class="card__top__askR">
+							<div class="card__top_wrapper__askR">
+								<div class="card__num-box__askR">
+									<p class="card__number__askR">№ 782942</p>
+									<label for="card__checked_1" class="card__label__askR">
+										<input
+											id="card__checked_1"
+											type="checkbox"
+											class="card__input__askR"
+											name="card__input"
+										/>
+										<div class="card__checked__askR">
+											<svg
+												class="svg"
+												width="15"
+												height="12"
+												viewBox="0 0 15 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M5.12488 8.80125L1.82363 5.5L0.699463 6.61625L5.12488 11.0417L14.6249 1.54166L13.5086 0.425415L5.12488 8.80125Z"
+													fill="white"
+												/>
+											</svg>
+										</div>
+									</label>
+								</div>
+								<p class="card__title__askR">МОЕ ПЕРВОЕ ФОТО</p>
+								<p class="card__date__askR">24.04.2022</p>
+								<p class="card__count__askR">24</p>
+								<p class="card__count_text__askR">фото</p>
+							</div>
+						</div>
+						<div class="card__bottom__askR">
+							<div class="card__wrapper__askR">
+								<div class="card__paid__askR">ОПЛАЧЕНО</div>
+								<button class="block__more__askR">...</button>
+							</div>
+						</div>
+					</div>
+					<div id="card" class="card__askR">
+						<div class="card__top__askR">
+							<div class="card__top_wrapper__askR">
+								<div class="card__num-box__askR">
+									<p class="card__number__askR">№ 782942</p>
+									<label for="card__checked_2" class="card__label__askR">
+										<input
+											id="card__checked_2"
+											type="checkbox"
+											class="card__input__askR"
+											name="card__input"
+										/>
+										<div class="card__checked__askR">
+											<svg
+												class="svg"
+												width="15"
+												height="12"
+												viewBox="0 0 15 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M5.12488 8.80125L1.82363 5.5L0.699463 6.61625L5.12488 11.0417L14.6249 1.54166L13.5086 0.425415L5.12488 8.80125Z"
+													fill="white"
+												/>
+											</svg>
+										</div>
+									</label>
+								</div>
+								<p class="card__title__askR">МОЕ ПЕРВОЕ ФОТО</p>
+								<p class="card__date__askR">24.04.2022</p>
+								<p class="card__count__askR">24</p>
+								<p class="card__count_text__askR">фото</p>
+							</div>
+						</div>
+						<div class="card__bottom__askR">
+							<div class="card__wrapper__askR">
+								<div class="card__paid__askR">ОПЛАЧЕНО</div>
+								<button class="block__more__askR">...</button>
+							</div>
+						</div>
+					</div>
+					<div id="card" class="card__askR">
+						<div class="card__top__askR">
+							<div class="card__top_wrapper__askR">
+								<div class="card__num-box__askR">
+									<p class="card__number__askR">№ 782942</p>
+									<label for="card__checked_3" class="card__label__askR">
+										<input
+											id="card__checked_3"
+											type="checkbox"
+											class="card__input__askR"
+											name="card__input"
+										/>
+										<div class="card__checked__askR">
+											<svg
+												class="svg"
+												width="15"
+												height="12"
+												viewBox="0 0 15 12"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M5.12488 8.80125L1.82363 5.5L0.699463 6.61625L5.12488 11.0417L14.6249 1.54166L13.5086 0.425415L5.12488 8.80125Z"
+													fill="white"
+												/>
+											</svg>
+										</div>
+									</label>
+								</div>
+								<p class="card__title__askR">МОЕ ПЕРВОЕ ФОТО</p>
+								<p class="card__date__askR">24.04.2022</p>
+								<p class="card__count__askR">24</p>
+								<p class="card__count_text__askR">фото</p>
+							</div>
+						</div>
+						<div class="card__bottom__askR">
+							<div class="card__wrapper__askR">
+								<div class="card__paid__askR">ОПЛАЧЕНО</div>
+								<button class="block__more__askR">...</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="./panel.js"></script>
+	</body>
+</html>
